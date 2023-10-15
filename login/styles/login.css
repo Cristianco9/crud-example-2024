@@ -15,6 +15,7 @@ html {
     --orange-color: #FF6902;
     --button-color: #C21212;
     --grey-color: #c9c9c9;
+    --grey-dark-color: #898989;
 }
 
 .mainContainer {
@@ -23,7 +24,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, var(--red-color), var(--orange-color))
+    background: linear-gradient(to bottom, var(--orange-color), var(--red-color));
 }
 
 .loginBox {
@@ -32,9 +33,8 @@ html {
     display: flex;
     justify-content: center;
     background-color: white;
-    border-width: 5rem;
-    border-color: aqua;
-    border-radius: 1rem;
+    border-radius: 2.5rem;
+    border: 0.7rem solid var(--button-color);
 }
 
 .elementsBox {
@@ -65,6 +65,33 @@ html {
     border-radius: 1rem;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
     text-align: center;
+}
+
+.loginBotton {
+    width: 22rem;
+    height: 4rem;
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+    background-color: var(--button-color);
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    margin-top: 30%;
+}
+
+.linksBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    margin-top: 20%;
+}
+
+.link {
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.3rem;
+    color: var(--grey-dark-color);
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 @media (min-width: 601px) {
