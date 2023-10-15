@@ -1,0 +1,22 @@
+/* universal properties*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* setting rem measuare */
+html {
+    font-size: 62.5%;
+}
+
+/* limiting the maximun body wrowth */
+main {
+
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #DB2801, #FF6902)
+}
