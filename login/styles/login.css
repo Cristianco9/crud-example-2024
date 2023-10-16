@@ -28,8 +28,9 @@ html {
 }
 
 .loginBox {
-    width: 90%;
-    height: 90%;
+    width: 80vw;
+    height: 90vh;
+    padding: 0 0 0 0;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -44,8 +45,8 @@ html {
 
 .tittle {
     font-family: 'Readex Pro', sans-serif;
-    font-size: 2.4rem;
-    padding-top: 60%;
+    font-size: 2rem;
+    margin: 7rem auto 0 auto;
     text-align: center;
     justify-content: center;
 }
@@ -53,14 +54,15 @@ html {
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 3rem;
-    padding-top: 50%;
+    margin: auto auto auto auto;
 }
 
 .input {
     font-family: 'Readex Pro', sans-serif;
-    width: 22rem;
-    height: 4rem;;
+    width: 16rem;
+    height: 4rem;
     background-color: var(--grey-color);
     border-radius: 1rem;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
@@ -68,21 +70,26 @@ html {
 }
 
 .loginBotton {
-    width: 22rem;
+    width: 13rem;
     height: 4rem;
     font-family: 'Readex Pro', sans-serif;
+    font-size: 1.5rem;
     color: white;
     background-color: var(--button-color);
     border-radius: 1rem;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    margin-top: 30%;
+    margin: auto auto auto auto;
+    position: relative;
+    top: 2rem;
 }
 
 .linksBox {
     display: flex;
     flex-direction: column;
     gap: 2.2rem;
-    margin-top: 20%;
+    margin: auto auto auto auto;
+    position: relative;
+    top: -1rem;
 }
 
 .link {
@@ -90,25 +97,123 @@ html {
     font-size: 1.3rem;
     color: var(--grey-dark-color);
     text-align: center;
-    justify-content: center;
     text-decoration: underline;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 375px) {
     .loginBox {
-        width: 60%;
+        width: 70vw;
+        height: 90vh;
+;
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 600px) {
     .loginBox {
-        width: 45%;
+        width: 50rem;
+        height: 90rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tittle {
+        font-size: 3.5rem;
+        margin: auto;
+        position: relative;
+        top: -15rem;
+    }
+
+    .input {
+        width: 30rem;
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.2rem;
+    }
+
+    .loginBotton {
+        width: 18rem;
+        height: 5rem;
+        font-size: 2.2rem;
+        top: 6rem;
+
+    }
+
+    .form {
+        position: relative;
+        top: -3rem;
+        font-size: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+
+    .linksBox {
+        top: 13rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        font-size: 2rem;
     }
 }
 
-
-@media (min-width: 1280px) {
+@media (min-width: 900px) {
     .loginBox {
-        width: 30%;
+        width: 50rem;
+        height: 90rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .loginBox {
+        width: 40rem;
+        height: 70rem;
+    }
+
+     .tittle {
+        font-size: 2.3rem;
+        margin: auto;
+        position: relative;
+        top: -8rem;
+    }
+
+    .input {
+        width: 22rem;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+
+    .loginBotton {
+        width: 16rem;
+        height: 4rem;
+        font-size: 1.8rem;
+        top: 4rem;
+
+    }
+
+    .form {
+        position: relative;
+        top: 1rem;
+        font-size: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+
+    .linksBox {
+        top: 13rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        font-size: 1.6rem;
     }
 }
