@@ -18,161 +18,184 @@ html {
     --grey-dark-color: #898989;
 }
 
-.mainContainer {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, var(--orange-color), var(--red-color));
-}
-
-.header {
-    width: 100vw;
-    height: 12vh;
-    background-color: var(--grey-color);
-    box-shadow: 0px 10px 15px rgb(0, 0, 0);
-}
-
-.cardBox {
-    position: relative;
-    width: 40vw;
-    height: 70vh;
-    background-color: white;
-    border-radius: 2.5rem;
-    border: 0.7rem solid var(--button-color);
-    top: 5rem;
-    left: 80rem;
-}
-
-.title {
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 2.5rem;
-    margin: 4rem auto 0 auto;
-    justify-content: center;
-    text-align: center;
-}
-
-.form {
-    position: relative;
-    top: 10rem;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.numberInfo {
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    top: -5.5rem;
-    left: 3rem;
-}
-
-.number {
-    font-family: 'Readex Pro', sans-serif;
-    width: 20rem;
-    height: 3rem;
-    background-color: var(--grey-color);
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    position: relative;
-    top: -5.5rem;
-    left: 5rem;
-}
-
-.nameInfo {
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    top: 0.5rem;
-    left: -33.1rem;
-}
-
-.name {
-    font-family: 'Readex Pro', sans-serif;
-    width: 25rem;
-    height: 3rem;
-    background-color: var(--grey-color);
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    position: relative;
-    top: -2.5rem;
-    left: 20.8rem;
-}
-
-.dateInfo {
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    left: -22.2rem;
-    top: 3.2rem;
-}
-
-.date {
-    font-family: 'Readex Pro', sans-serif;
-    width: 8rem;
-    height: 3rem;
-    background-color: var(--grey-color);
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    position: relative;
-    top: 3.1rem;
-    left: -21.2rem;
-}
-
-.codeInfo {
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    left: 3.1rem;
-    top: 6rem;
-}
-
-.code {
-    font-family: 'Readex Pro', sans-serif;
-    width: 6rem;
-    height: 3rem;
-    background-color: var(--grey-color);
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    position: relative;
-    top: 5.8rem;
-    left: 5rem; 
-}
-
-.idInfo {
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 1.5rem;
-    position: relative;
-    left: -19.2rem;
-    top: 11rem;
-}
-
-.id {
-    font-family: 'Readex Pro', sans-serif;
-    width: 15rem;
-    height: 3rem;
-    background-color: var(--grey-color);
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    text-align: center;
-    position: relative;
-    top: 10.9rem;
-    left: -17.5rem; 
-}
-
-.loginBotton {
-    width: 13rem;
-    height: 4rem;
-    font-family: 'Readex Pro', sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    background-color: var(--button-color);
-    border-radius: 1rem;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    position: relative;
-    top: 17rem;
-    left: 21rem;
+@media (min-width: 1024px) {
+    .mainContainer {
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, var(--orange-color), var(--red-color));
+    }
+    
+    .header {
+        width: 100vw;
+        height: 12vh;
+        background-color: var(--grey-color);
+        box-shadow: 0px 10px 15px rgb(0, 0, 0);
+    }
+    
+    .cardBox {
+        position: relative;
+        width: 40vw;
+        height: 70vh;
+        background-color: white;
+        border-radius: 2.5rem;
+        border: 0.7rem solid var(--button-color);
+        top: 5rem;
+        left: 80rem;
+    }
+    
+    .title {
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 2.5rem;
+        margin: 4rem auto 0 auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .form {
+        position: relative;
+        top: 10rem;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .numberInfo {
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.5rem;
+        position: relative;
+        top: -5.5rem;
+        left: 3rem;
+    }
+    
+    .number {
+        font-family: 'Readex Pro', sans-serif;
+        width: 20rem;
+        height: 3rem;
+        background-color: var(--grey-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: relative;
+        top: -5.5rem;
+        left: 5rem;
+    }
+    
+    .nameInfo {
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.5rem;
+        position: relative;
+        top: 0.5rem;
+        left: -33.1rem;
+    }
+    
+    .name {
+        font-family: 'Readex Pro', sans-serif;
+        width: 25rem;
+        height: 3rem;
+        background-color: var(--grey-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: relative;
+        top: -2.5rem;
+        left: 20.8rem;
+    }
+    
+    .dateInfo {
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.5rem;
+        position: relative;
+        left: -22.2rem;
+        top: 3.2rem;
+    }
+    
+    .date {
+        font-family: 'Readex Pro', sans-serif;
+        width: 8rem;
+        height: 3rem;
+        background-color: var(--grey-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: relative;
+        top: 3.1rem;
+        left: -21.2rem;
+    }
+    
+    .codeInfo {
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.5rem;
+        position: relative;
+        left: 3.1rem;
+        top: 6rem;
+    }
+    
+    .code {
+        font-family: 'Readex Pro', sans-serif;
+        width: 6rem;
+        height: 3rem;
+        background-color: var(--grey-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: relative;
+        top: 5.8rem;
+        left: 5rem; 
+    }
+    
+    .idInfo {
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.5rem;
+        position: relative;
+        left: -19.2rem;
+        top: 11rem;
+    }
+    
+    .id {
+        font-family: 'Readex Pro', sans-serif;
+        width: 15rem;
+        height: 3rem;
+        background-color: var(--grey-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        position: relative;
+        top: 10.9rem;
+        left: -17.5rem; 
+    }
+    
+    .loginBotton {
+        width: 13rem;
+        height: 4rem;
+        font-family: 'Readex Pro', sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        background-color: var(--button-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        position: relative;
+        top: 17rem;
+        left: 21rem;
+    }
+    
+    .itemsBox {
+        position: relative;
+        width: 53vw;
+        height: 40vh;
+        background: linear-gradient(to bottom, var(--grey-dark-color), var(--grey-color));
+        border-radius: 1rem;
+        border: 0.2rem solid black;
+        top: -48rem;
+        left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+    
+    .item {
+        width: 22rem;
+        height: 27rem;
+        background-color: black;
+        border-radius: 1rem;
+    }
 }
