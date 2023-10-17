@@ -28,7 +28,7 @@ html {
     .header {
         width: 100vw;
         height: 12vh;
-        background-color: var(--grey-color);
+        background: linear-gradient(to bottom, var(--grey-dark-color), var(--grey-color));
         box-shadow: 0px 10px 15px rgb(0, 0, 0);
     }
     
@@ -84,7 +84,7 @@ html {
         font-family: 'Readex Pro', sans-serif;
         font-size: 1.5rem;
         position: relative;
-        top: 0.5rem;
+        top: 0.6rem;
         left: -33.1rem;
     }
     
@@ -106,7 +106,7 @@ html {
         font-size: 1.5rem;
         position: relative;
         left: -22.2rem;
-        top: 3.2rem;
+        top: 3.4rem;
     }
     
     .date {
@@ -118,7 +118,7 @@ html {
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
         text-align: center;
         position: relative;
-        top: 3.1rem;
+        top: 3.2rem;
         left: -21.2rem;
     }
     
@@ -127,7 +127,7 @@ html {
         font-size: 1.5rem;
         position: relative;
         left: 3.1rem;
-        top: 6rem;
+        top: 6.2rem;
     }
     
     .code {
@@ -139,7 +139,7 @@ html {
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
         text-align: center;
         position: relative;
-        top: 5.8rem;
+        top: 6.1rem;
         left: 5rem; 
     }
     
@@ -148,7 +148,7 @@ html {
         font-size: 1.5rem;
         position: relative;
         left: -19.2rem;
-        top: 11rem;
+        top: 12rem;
     }
     
     .id {
@@ -160,7 +160,7 @@ html {
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
         text-align: center;
         position: relative;
-        top: 10.9rem;
+        top: 11.9rem;
         left: -17.5rem; 
     }
     
@@ -195,7 +195,54 @@ html {
     .item {
         width: 22rem;
         height: 27rem;
-        background-color: black;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        background-color: white;
         border-radius: 1rem;
+        border: 0.4rem solid var(--button-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alert {
+        width: 12rem;
+        height: 3rem;
+        font-family: 'Readex Pro', sans-serif;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: var(--button-color);
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+        position: relative;
+        top: 8rem;
+    }
+
+    .info {
+        width: 18rem;
+        font-family: 'Readex Pro', sans-serif;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        top: -5rem;
+    }
+
+    .info1 {
+        width: 18rem;
+        font-family: 'Readex Pro', sans-serif;
+        color: black;
+        font-size: 2.2rem;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: -4rem;
+    }
+
+    .bonus {
+        position: relative;
+        top: 0.5rem;
     }
 }
