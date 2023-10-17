@@ -6,8 +6,11 @@ function validateData() {
     if (userId === "" || userPassword === "") {
         alert("Por favor llene los datos");
         return false;
+    } else if (userId === "root" || userPassword === "root"){
+        window.location.href = "../../inputData/inputData.html"
+        return false;
     } else {
-        alert("Datos enviados");
-        return true;
+        alert("Datos incorrectos");
+        return false;
     }
 }
