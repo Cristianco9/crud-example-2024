@@ -20,7 +20,7 @@
         <button type="button" class="menu">Perfil</button>
         <button type="button" class="menu">Tarjetas</button>
         <button type="button" class="menu">Pagos</button> 
-        <button type="button" class="menu">Salir</button>
+        <button type="button" class="menu">Facturas</button>
        <button type="button" class="menu">Salir</button> 
     </header>
     <main class="mainContainer">
@@ -65,7 +65,6 @@
         <section class="rightBox">
             <section class="cardBox">
                 <h2 class="title">Ingrese los datos de su tarjeta</h2>
-                <!-- <form action="/submit" method="post" class="form"> -->
                 <section class="formContainer">
                     <form id="form" class="form"></form>
                         <div class="field">
@@ -88,7 +87,7 @@
                             <label for="id" class="idInfo">Número de identidad</label>
                             <input class="id" id="id" type="number" placeholder="XXXXXXXXXXXX">
                         </div>
-                        <button type="submit" class="loginBotton">Guardar</button>
+                        <button type="submit" class="loginBotton" onclick="captureData()">Guardar</button>
                     </form>
                 </section>
             </section> 
