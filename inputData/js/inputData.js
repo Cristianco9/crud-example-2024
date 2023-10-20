@@ -1,29 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
+function captureData() {
 
-    const userData = document.getElementById("form");
+    var cardNumber =  document.getElementById("number").value;
+    var cardName =  document.getElementById("name").value;
+    var cardDate =  document.getElementById("date").value;
+    var cardCode =  document.getElementById("code").value;
+    var cardId =  document.getElementById("id").value;
 
-    userData.addEventListener("submit", function(event) {
-        event.preventDefault();
+    if (cardNumber == "" && cardName == "" && cardDate == "" && cardCode == "" && cardId == "") {
+        alert("Por favor ingrese Todos los datos de su tarjeta");
+    } else {
 
-        const numberCard = document.getElementById("number").value;
-        const ownerName = document.getElementById("name").value;
-        const cardDate= document.getElementById("date").value;
-        const cardCode = document.getElementById("code").value;
-        const ownerId = document.getElementById("id").value;
-        
-        if ( !numberCard || !ownerName || !cardDate || !cardCode || !ownerId ) {
-            alert("Por favor llene los datos");
-        } else {
-            const cardData = {
-                number:numberCard,
-                name: ownerName,
-                date: cardDate,
-                code: cardCode,
-                id: ownerId
-            };
-
-            console.log(cardData);
-            alert("Datos guardados");
-        }
-    });
-});
+        const userCard = {
+            number : cardNumber,
+            name : cardName,
+            date : cardDate,
+            code : cardCode,
+            id : cardId
+        };
+        console.log(userCard);
+    };
+    alert("Tarjeta guardada");
+};
