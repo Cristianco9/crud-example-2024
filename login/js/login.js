@@ -7,7 +7,7 @@ function validateData() {
         alert("Por favor llene los datos");
         return false;
     } else if (userId === "root" || userPassword === "root"){
-        window.location.href = "../../inputData/inputData.html"
+        window.location.href = "../../inputData/public/inputData.html"
         return false;
     } else {
         alert("Datos incorrectos");

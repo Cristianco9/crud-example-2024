@@ -265,6 +265,7 @@ html {
         border-radius: 1rem;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
         text-align: center;
+        justify-content: center;
     }
 
     .loginBotton {

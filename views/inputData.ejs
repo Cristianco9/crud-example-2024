@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos de la tarjeta</title>
     <meta name="description" content="Datos de la tarjeta"> 
-    <link rel="stylesheet" href="./styles/inputData.css">
+    <link rel="stylesheet" type="text/css" href="/styles/inputData.css">
     <meta name="robots" content="index,follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,34 +66,33 @@
             <section class="cardBox">
                 <h2 class="title">Ingrese los datos de su tarjeta</h2>
                 <section class="formContainer">
-                    <form id="form" class="form"></form>
+                    <form  action="/save" method="post" id="form" class="form"></form>
                         <div class="field">
-                            <label for="number" class="numberInfo">Número de la tarjeta</label>
-                            <input class="number" id="number" type="number" placeholder="XXXX XXXX XXXX XXXX">
+                            <label class="numberInfo" for="number">Número de la tarjeta</label>
+                            <input class="number" name="number" id="number" type="number" placeholder="XXXX XXXX XXXX XXXX">
                         </div>
                         <div class="field">
-                            <label for="name" class="nameInfo">Nombre completo</label>
-                            <input class="name" id="name" type="text" placeholder="Nombre del títular">
+                            <label class="nameInfo" for="name">Nombre completo</label>
+                            <input class="name" name="name" id="name" type="text" placeholder="Nombre del títular">
                         </div>
                         <div class="field">
-                            <label for="date" class="dateInfo">Fecha de vencimiento</label>
-                            <input class="date" id="date" type="number" placeholder="MM/AA">
+                            <label class="dateInfo" for="date">Fecha de vencimiento</label>
+                            <input class="date" name="date" id="date" type="number" placeholder="MM/AA">
                         </div>
                         <div class="field">
-                            <label for="code" class="codeInfo">Código de seguridad</label>
-                            <input class="code" id="code" type="number" placeholder="XXX">
+                            <label class="codeInfo" for="code">Código de seguridad</label>
+                            <input class="code" name="code" id="code" type="number" placeholder="XXX">
                         </div>
                         <div class="field">
-                            <label for="id" class="idInfo">Número de identidad</label>
-                            <input class="id" id="id" type="number" placeholder="XXXXXXXXXXXX">
+                            <label class="idInfo" for="id">Número de identidad</label>
+                            <input class="id" name="id" id="id" type="number" placeholder="XXXXXXXXXXXX">
                         </div>
-                        <button type="submit" class="loginBotton" onclick="captureData()">Guardar</button>
+                        <button type="submit" class="loginBotton">Guardar</button>
                     </form>
                 </section>
             </section> 
         </section>
     </main>
-    <script src="./js/inputData.js"></script>
-    <script src="./js/validateFields.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
