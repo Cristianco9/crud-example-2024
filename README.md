@@ -8,14 +8,14 @@
 
 #### luego desde la terminal debes desplazarte a la carpeta del proyecto
 
-ejecutar los comandos de npm para instalar la dependencias del proyecto:
+ejecutar el comando de npm para instalar la dependencias del proyecto:
 
-`npm init -y`
-`npm install express --save`
-`npm install ejs`
-`npm install cors`
-`npm install --save mysql`
-`npm install body-parser`
+`npm install`
+
+ahora para lanzar el servidor debes ejecutar el comando:
+
+`npm run`
+`npm start`
 
 ### Para correr proyecto existente:
 
