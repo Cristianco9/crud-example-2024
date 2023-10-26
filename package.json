@@ -1,15 +1,20 @@
 {
-  "name": "inputdata",
+  "name": "save-data",
   "version": "1.0.0",
-  "main": "/app.js",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "ejs": "^3.1.9",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "mysql": "^2.18.1"
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  }
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
