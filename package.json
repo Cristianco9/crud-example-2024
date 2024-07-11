@@ -1,7 +1,7 @@
 {
-  "name": "save-data",
+  "name": "crud-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "CRUD with Node.js and MySQL",
   "main": "src/index.js",
   "type": "module",
   "dependencies": {
@@ -10,11 +10,13 @@
     "morgan": "^1.10.0",
     "mysql2": "^2.3.3"
   },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+    "start": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Cristianco9 <cristian_cortes_ortiz@hotmail.com>",
   "license": "ISC"
 }

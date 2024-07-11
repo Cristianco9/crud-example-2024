@@ -1,10 +1,16 @@
--- to create a new database
+-- Crear una nueva base de datos llamada 'customersdb'
 CREATE DATABASE customersdb;
 
--- to use database
-use customersdb;
+-- Seleccionar la base de datos 'customersdb' para usarla en las
+-- siguientes operaciones
+USE customersdb;
 
--- creating a new table
+-- Crear una tabla llamada 'customer' con las siguientes columnas:
+-- 'id': un entero sin signo de 6 dígitos que se autoincrementa
+--    y es la clave primaria
+-- 'name': una cadena de texto de hasta 50 caracteres, no puede ser nula
+-- 'address': una cadena de texto de hasta 100 caracteres, no puede ser nula
+-- 'phone': una cadena de texto de hasta 15 caracteres, puede ser nula
 CREATE TABLE customer (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
@@ -12,8 +18,8 @@ CREATE TABLE customer (
   phone VARCHAR(15)
 );
 
--- to show all tables
-show tables;
+-- Mostrar todas las tablas en la base de datos actual
+SHOW TABLES;
 
--- to describe table
-describe customer;
+-- Describir la estructura de la tabla 'customer'
+DESCRIBE customer;
