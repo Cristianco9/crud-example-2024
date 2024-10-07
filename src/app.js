@@ -4,8 +4,8 @@ import express from "express";
 import path from "path";
 // Importa morgan para el registro de solicitudes HTTP
 import morgan from "morgan";
-// Importa las rutas de clientes desde el archivo customer.routes.js
-import customerRoutes from "./routes/customer.routes.js";
+// Importa el router principal de la API que atenderá todas las rutas
+import routerApi from "./routes/index.js";
 // Importa fileURLToPath para manejar URLs de archivos
 import { fileURLToPath } from "url";
 // Importa la funciona que realiza una prueba de conexión a la base de datos
@@ -35,8 +35,9 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: false }));
 
 // Rutas
-// Usa las rutas definidas en customer.routes.js
-app.use(customerRoutes);
+// Utiliza la función del router principal y se le pasa como parámetro la
+// instancia del servidor express almacenado en la constante app
+routerApi(app);
 
 // Archivos estáticos
 // Sirve archivos estáticos desde el directorio "public"
